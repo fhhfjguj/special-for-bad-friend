@@ -1,3 +1,4 @@
+print("Requires permission to calculate")
 print("ax+by=c")
 print("dx+ey=f")
 print("a=")
@@ -50,5 +51,5 @@ run_as_admin(admin_cmd)
 print("x =", x)
 print("y =", y)
 
-print("回车以关闭")
+print("Enter to close")
 q=input()
